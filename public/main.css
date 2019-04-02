@@ -1,0 +1,17 @@
+#title {
+    color: black;
+    font-family: 'system-ui';
+    font-size: 76px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#buttons {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#buttons a {
+    margin: 20px;
+    font-size: 50px;
+}

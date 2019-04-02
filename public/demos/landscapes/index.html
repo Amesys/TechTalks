@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <!-- Bootstrap last versions -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
+
+  <body>
+    <div id="console"></div>
+    <h1 id="title">Waiting for custom model to be trained...</h1>
+    <div id="buttons">
+        <button id="class-a" type="button" class="btn btn-outline-warning">Australie</button>
+        <button id="class-b" type="button" class="btn btn-outline-warning">Antarctique</button>
+        <button id="class-c" type="button" class="btn btn-outline-warning">États-Unis</button>
+        <button id="knnStatus" type="button" class="btn btn-outline-dark">Entraînement terminé</button>
+        <button id="stopAlgo" type="button" class="btn btn-outline-danger">Arrêter l'algo</button>
+    </div>
+    <div id="container">
+        <img id="landscape" src="ginniHendrix.png"></img>
+        <!-- Add an image that we will use to test -->
+        <!-- <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/> -->
+        <video autoplay playsinline muted id="webcam" width="600" height="600"></video>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

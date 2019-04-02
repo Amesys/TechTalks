@@ -1,0 +1,51 @@
+#title {
+    color: black;
+    font-family: 'system-ui';
+    font-size: 76px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#landscape {
+    width:400px;
+    height:400px;
+    margin-left: 50px;
+    animation: zoominoutsinglefeatured 1500ms infinite ease-in-out;
+    
+    /* -webkit-animation:spin 3s ease-in-out 1;
+    -moz-animation:spin 3s ease-in-out 1;
+    animation:spin 3s ease-in-out 1; */
+}
+
+#container img, video{
+    margin-top: 10px;
+    margin-right: 10px;    
+    float: left;
+    clear: none; 
+}
+
+#buttons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#buttons button {
+    font-size: 30px;
+    margin-right: 15px;    
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(720deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(720deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(720deg); transform:rotate(720deg); } }
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.05,1.05);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
